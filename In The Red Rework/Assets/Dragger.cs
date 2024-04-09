@@ -9,8 +9,9 @@ public class Dragger : MonoBehaviour
     void Update() {
 if(!dragging) return;
     
- 
- transform.position;
+ var mousePosition = (Vector2)Camera.main.ScreenToWorldPoint(Input.mousePosition);
+
+ transform.position = mousePosition;
     }
     
     void OnMouseDown () {
