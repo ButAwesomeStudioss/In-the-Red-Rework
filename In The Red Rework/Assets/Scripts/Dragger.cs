@@ -4,9 +4,14 @@ using UnityEngine;
 
 public class Dragger : MonoBehaviour
 {
+    
     private bool dragging;
     
     private Vector2 offset;
+    
+    
+
+
     void Update() {
 if(!dragging) return;
     
@@ -22,6 +27,8 @@ offset = GetMousePos() - (Vector2)transform.position;
 
 
 void OnMouseUp(){
+
+
 transform.position = transform.position;
 dragging = false;
 
