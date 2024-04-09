@@ -6,18 +6,28 @@ public class Dragger : MonoBehaviour
 {
     private bool dragging;
     
+    private Vector2 offset;
     void Update() {
 if(!dragging) return;
     
- var mousePosition = (Vector2)Camera.main.ScreenToWorldPoint(Input.mousePosition);
+ var mousePosition = GetMousePos();
 
- transform.position = mousePosition;
+ transform.position = mousePosition - offset;
     }
     
     void OnMouseDown () {
 dragging = true;
+offset = GetMousePos() - (Vector2)transform.position;
 }
 
 
+void OnMouseUp(){
+transform.position = transform.position;
+dragging = false;
 
+}
+
+Vector2 GetMousePos(){
+return Camera.main.ScreenToWorldPoint(Input.mousePosition);
+}
 }
