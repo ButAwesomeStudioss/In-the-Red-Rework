@@ -18,7 +18,7 @@ if(!dragging) return;
 
  transform.position = mousePosition - offset;
     }
-    
+   
     void OnMouseDown () {
 dragging = true;
 offset = GetMousePos() - (Vector2)transform.position;
@@ -26,9 +26,15 @@ offset = GetMousePos() - (Vector2)transform.position;
 
 
 void OnMouseUp(){
+if(transform.position.Equals(EndSlot.transform.position)){
 
-transform.position = transform.position;
+
+    
+        transform.position = transform.position;
 dragging = false;
+    
+}
+
 }
 
 Vector2 GetMousePos(){
