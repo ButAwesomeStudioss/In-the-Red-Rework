@@ -9,7 +9,10 @@ public class Dragger : MonoBehaviour
     
     private Vector2 offset;
     
-    
+    private EndSlot Slot;
+    public void init(EndSlot slot) {
+
+    }
 
 
     void Update() {
@@ -27,10 +30,16 @@ offset = GetMousePos() - (Vector2)transform.position;
 
 
 void OnMouseUp(){
-
-
-transform.position = transform.position;
+if(Vector2.Distance(transform.position,Slot.transform.position)< 3) {
+    transform.position = Slot.transform.position;
+    
+}
+else {
+    transform.position = transform.position;
 dragging = false;
+}
+
+
 
 }
 
