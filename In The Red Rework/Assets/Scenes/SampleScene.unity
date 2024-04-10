@@ -363,7 +363,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timerType: 0
-  timeToDisplay: 4
+  timeToDisplay: 600
 --- !u!1 &1154406374
 GameObject:
   m_ObjectHideFlags: 0
