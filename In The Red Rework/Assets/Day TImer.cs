@@ -47,12 +47,23 @@ public class DayTImer : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        EventManager.OnTimerStart();
+
     }
 
     // Update is called once per frame
     void Update()
     {
+        if (!_isRunning) return;
+        if (timerType == TimerType.Countdown && timeToDisplay < -Time.deltaTime)
+        {
+            EventManager_TimerStop();
+            return;
+        }
+        timeToDisplay += timerType == TimerType.Countdown ? -Time.deltaTime : Time.deltaTime;
+
+        TimeSpan timeSpan = TimeSpan.FromSeconds(timeToDisplay);
+        _Timer.text = timeSpan.ToString(format:@"mm\:ss\:ff");
         
     }
 }
