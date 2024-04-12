@@ -378,7 +378,7 @@ GameObject:
   - component: {fileID: 1154406375}
   m_Layer: 5
   m_Name: Canvas
-  m_TagString: Untagged
+  m_TagString: Seller
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -633,7 +633,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cc627c273e4eb4ee49418df3d1f6d35b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  EndSlot: {fileID: 1938207932}
+  EndSlot: {fileID: 1938207929}
+  Me: {fileID: 1605825606}
+  destroy: 0
 --- !u!61 &1605825606
 BoxCollider2D:
   m_ObjectHideFlags: 0
