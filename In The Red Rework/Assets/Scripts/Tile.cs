@@ -4,15 +4,18 @@ using UnityEngine;
 
 public class TIle : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    [SerializeField] private Color _basecolor, _offsetColor;
+    [SerializeField] private SpriteRenderer _renderer;
 
-    // Update is called once per frame
-    void Update()
+    public void Init(bool isOffset)
     {
-        
+
+        _renderer.color = isOffset ? _offsetColor : _basecolor;
     }
+    
+      
+    
+
+
+
 }

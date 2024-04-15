@@ -8,6 +8,8 @@ public class Grid : MonoBehaviour
 
     [SerializeField] private TIle _TilePrefab;
 
+    [SerializeField] private Transform _cam;
+
 
     void Start()
     {
@@ -26,11 +28,16 @@ public class Grid : MonoBehaviour
                 var spawntile = Instantiate(_TilePrefab, new Vector3(x, y), Quaternion.identity);
                 spawntile.name = $"tile {x} {y}";
 
+                var isOffset = (x % 2 == 0 && y % 2 != 0) || (x % 2 != 0 && y % 2 == 0);
+                spawntile.Init(isOffset);
 
             }
 
 
         }
+
+
+        _cam.transform.position = new Vector3((float)_width / 2 - 0.5f, (float)_height / 2 - 0.5f, -10);
         
     }
        

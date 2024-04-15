@@ -123,6 +123,11 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!212 &341602148 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 2748806448478968552, guid: 3ab8ef81760cc4b9f9eb80b6229a8f69, type: 3}
+  m_PrefabInstance: {fileID: 8075468777998074648}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -1042,9 +1047,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ff74e70cad5f344f6972c1dcc39efc80, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _width: 16
-  _height: 9
+  _width: 20
+  _height: 12
   _TilePrefab: {fileID: 2830228774518416234, guid: 3ab8ef81760cc4b9f9eb80b6229a8f69, type: 3}
+  _cam: {fileID: 519420032}
 --- !u!4 &2020158579
 Transform:
   m_ObjectHideFlags: 0
@@ -1072,13 +1078,41 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tile
       objectReference: {fileID: 0}
+    - target: {fileID: 2830228774518416234, guid: 3ab8ef81760cc4b9f9eb80b6229a8f69, type: 3}
+      propertyPath: _renderer
+      value: 
+      objectReference: {fileID: 341602148}
+    - target: {fileID: 2830228774518416234, guid: 3ab8ef81760cc4b9f9eb80b6229a8f69, type: 3}
+      propertyPath: _basecolor.b
+      value: 0.05842829
+      objectReference: {fileID: 0}
+    - target: {fileID: 2830228774518416234, guid: 3ab8ef81760cc4b9f9eb80b6229a8f69, type: 3}
+      propertyPath: _basecolor.g
+      value: 0.05842829
+      objectReference: {fileID: 0}
+    - target: {fileID: 2830228774518416234, guid: 3ab8ef81760cc4b9f9eb80b6229a8f69, type: 3}
+      propertyPath: _basecolor.r
+      value: 0.9528302
+      objectReference: {fileID: 0}
+    - target: {fileID: 2830228774518416234, guid: 3ab8ef81760cc4b9f9eb80b6229a8f69, type: 3}
+      propertyPath: _offsetColor.b
+      value: 0.3213332
+      objectReference: {fileID: 0}
+    - target: {fileID: 2830228774518416234, guid: 3ab8ef81760cc4b9f9eb80b6229a8f69, type: 3}
+      propertyPath: _offsetColor.g
+      value: 0.3213332
+      objectReference: {fileID: 0}
+    - target: {fileID: 2830228774518416234, guid: 3ab8ef81760cc4b9f9eb80b6229a8f69, type: 3}
+      propertyPath: _offsetColor.r
+      value: 0.8207547
+      objectReference: {fileID: 0}
     - target: {fileID: 4136109711883939945, guid: 3ab8ef81760cc4b9f9eb80b6229a8f69, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 21.8
+      value: 0.01
       objectReference: {fileID: 0}
     - target: {fileID: 4136109711883939945, guid: 3ab8ef81760cc4b9f9eb80b6229a8f69, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 6.89
+      value: -0.04
       objectReference: {fileID: 0}
     - target: {fileID: 4136109711883939945, guid: 3ab8ef81760cc4b9f9eb80b6229a8f69, type: 3}
       propertyPath: m_LocalPosition.z
