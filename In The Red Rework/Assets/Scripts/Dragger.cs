@@ -17,8 +17,9 @@ public class Dragger : MonoBehaviour
     
     public BoxCollider2D EndSlot;
 
-    public BoxCollider2D Me;
-
+    public Rigidbody2D Me;
+public GameObject Spawner;
+public int Value;
 
     void Update() {
 if(!dragging) return;
@@ -47,10 +48,16 @@ Vector2 GetMousePos(){
 return Camera.main.ScreenToWorldPoint(Input.mousePosition);
 }
 private void OnCollisionEnter2D(Collision2D other) {
-    Destroy(gameObject);
+    Rigidbody2D clone;
+            clone = Instantiate(Me, Spawner.transform.position, Spawner.transform.rotation);
+            Destroy(gameObject);
+            
+
 }
 
-
+            
+    
+        
 
 
 }
