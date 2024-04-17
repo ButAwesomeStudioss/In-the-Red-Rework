@@ -5,18 +5,15 @@ using UnityEngine.SceneManagement;
 
 public class MenuScript : MonoBehaviour
 {
-    //Loads Game Scene
     public void OnPlayButton()
     {
         SceneManager.LoadScene(1);
     }
-    //Loads Options Menu
-    public void OnOptionsButton()
+    public void OnSettingsButton ()
     {
         SceneManager.LoadScene(2);
     }
-    //Closes Game
-    public void OnQuitButton()
+    public void OnQuitButton ()
     {
         Application.Quit();
     }
