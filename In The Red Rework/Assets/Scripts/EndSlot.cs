@@ -5,11 +5,14 @@ using UnityEngine;
 public class EndSlot : MonoBehaviour
 {
     // Start is called before the first frame update
-    void OnTriggerEnter(Collider other)
+    void Start()
     {
-        if (other.CompareTag("Seller"))
-        {
-            Destroy(gameObject);
-        }
+        
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        
     }
 }

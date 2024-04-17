@@ -1,18 +1,32 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
+using UnityEditor.SearchService;
 using UnityEngine;
 
 public class Spawner : MonoBehaviour
+
 {
-    // Start is called before the first frame update
+public Rigidbody2D solder;
+
     void Start()
     {
-        
+  
     }
 
-    // Update is called once per frame
+    
+
+
+
     void Update()
     {
-        
+        if (solder == null)
+        {
+        Debug.Log(":)");
+            Rigidbody2D clone;
+            clone = Instantiate(solder, transform.position, transform.rotation);
+
+    
+        }
     }
 }
