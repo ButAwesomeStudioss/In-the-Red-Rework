@@ -5,9 +5,13 @@ using UnityEngine.SceneManagement;
 
 public class MenuScript : MonoBehaviour
 {
-    public void OnPlayButton ()
+    public void OnPlayButton()
     {
         SceneManager.LoadScene(1);
+    }
+    public void OnSettingsButton ()
+    {
+        SceneManager.LoadScene(2);
     }
     public void OnQuitButton ()
     {
