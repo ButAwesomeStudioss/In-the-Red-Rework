@@ -19,11 +19,11 @@ Preset:
   - target: {fileID: 0}
     propertyPath: OutputAudioMixerGroup
     value: 
-    objectReference: {fileID: 0}
+    objectReference: {fileID: 7875245853959310186, guid: 38eb7e9501b564c8ebd5fea9b03d1e66, type: 2}
   - target: {fileID: 0}
     propertyPath: m_audioClip
     value: 
-    objectReference: {fileID: 0}
+    objectReference: {fileID: 8300000, guid: 80a9cb510fb37499bb9cd07be318c862, type: 3}
   - target: {fileID: 0}
     propertyPath: m_PlayOnAwake
     value: 1

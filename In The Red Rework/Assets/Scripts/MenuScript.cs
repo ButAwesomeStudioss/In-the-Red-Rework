@@ -13,9 +13,6 @@ public class MenuScript : MonoBehaviour
     {
         SceneManager.LoadScene(2);
     }
-<<<<<<< Updated upstream
-    public void OnQuitButton ()
-=======
     //Goes To Main Menu
     public void BackToMenu()
     {
@@ -23,8 +20,7 @@ public class MenuScript : MonoBehaviour
     }
     //Closes Game
     public void OnQuitButton()
->>>>>>> Stashed changes
     {
-        Application.Quit();
+        //Not Currently Working
     }
 }
