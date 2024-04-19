@@ -1,5 +1,6 @@
 using System;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using TMPro;
 
 public class DayTImer : MonoBehaviour
@@ -58,12 +59,14 @@ public class DayTImer : MonoBehaviour
         if (timerType == TimerType.Countdown && timeToDisplay < -Time.deltaTime)
         {
             EventManager_TimerStop();
+            SceneManager.LoadScene(3);
             return;
         }
         timeToDisplay += timerType == TimerType.Countdown ? -Time.deltaTime : Time.deltaTime;
 
         TimeSpan timeSpan = TimeSpan.FromSeconds(timeToDisplay);
-        _Timer.text = timeSpan.ToString(format:@"mm\:ss\:ff");
-        
+        _Timer.text = timeSpan.ToString(format:@"mm\:ss\.ff");
+              
+                   
     }
 }
