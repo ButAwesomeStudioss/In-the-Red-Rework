@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class EndSlot : MonoBehaviour
 {
+    public int AllMoney;
     // Start is called before the first frame update
     void Start()
     {
@@ -15,4 +16,7 @@ public class EndSlot : MonoBehaviour
     {
         
     }
+    private void OnCollisionEnter2D(Collision2D other) {
+    
+}
 }
