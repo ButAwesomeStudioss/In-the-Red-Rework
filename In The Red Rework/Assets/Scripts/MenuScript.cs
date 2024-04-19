@@ -19,8 +19,4 @@ public class MenuScript : MonoBehaviour
         SceneManager.LoadScene(0);
     }
     //Closes Game
-    public void OnQuitButton()
-    {
-        //Not Currently Working
-    }
 }

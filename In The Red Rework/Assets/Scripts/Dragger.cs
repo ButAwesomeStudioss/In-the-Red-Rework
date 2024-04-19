@@ -50,6 +50,7 @@ return Camera.main.ScreenToWorldPoint(Input.mousePosition);
 private void OnCollisionEnter2D(Collision2D other) {
     Rigidbody2D clone;
             clone = Instantiate(Me, Spawner.transform.position, Spawner.transform.rotation);
+            
             Destroy(gameObject);
             
 
