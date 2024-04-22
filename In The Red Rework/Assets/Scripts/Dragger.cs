@@ -6,6 +6,7 @@ using System.Threading;
 using JetBrains.Annotations;
 using Unity.VisualScripting;
 using UnityEditor;
+using UnityEditor.Tilemaps;
 using UnityEngine;
 
 public class Dragger : MonoBehaviour
@@ -18,8 +19,11 @@ public class Dragger : MonoBehaviour
     public BoxCollider2D EndSlot;
 
     public Rigidbody2D Me;
+    public GameObject tile;
 public GameObject Spawner;
 public int Value;
+ 
+    
 
     void Update() {
 if(!dragging) return;
@@ -39,7 +43,7 @@ offset = GetMousePos() - (Vector2)transform.position;
 
 
 void OnMouseUp(){
-        transform.position = transform.position;
+        transform.position.Set(tile.transform.position.x,tile.transform.position.y,tile.transform.position.z);
 dragging = false;
 
 }
@@ -50,15 +54,18 @@ return Camera.main.ScreenToWorldPoint(Input.mousePosition);
 private void OnCollisionEnter2D(Collision2D other) {
     Rigidbody2D clone;
             clone = Instantiate(Me, Spawner.transform.position, Spawner.transform.rotation);
-            
             Destroy(gameObject);
+            
+            
             
 
 }
 
             
-    
+            
+
+}
         
 
 
-}
+
