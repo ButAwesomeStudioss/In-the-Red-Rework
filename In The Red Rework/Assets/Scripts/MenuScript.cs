@@ -13,6 +13,10 @@ public class MenuScript : MonoBehaviour
     {
         SceneManager.LoadScene(2);
     }
+    public void OnCreditsButton()
+    {
+        SceneManager.LoadScene(4);
+    }
     //Goes To Main Menu
     public void BackToMenu()
     {
