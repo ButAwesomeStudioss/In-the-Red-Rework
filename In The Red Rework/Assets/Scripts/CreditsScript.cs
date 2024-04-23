@@ -21,4 +21,8 @@ public class CreditsScript : MonoBehaviour
     {
         SceneManager.LoadScene(7);
     }
+    public void BackToMenu()
+    {
+        SceneManager.LoadScene(0);
+    }
 }
