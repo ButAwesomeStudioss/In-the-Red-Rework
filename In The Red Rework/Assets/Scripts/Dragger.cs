@@ -43,7 +43,7 @@ offset = GetMousePos() - (Vector2)transform.position;
 
 
 void OnMouseUp(){
-        transform.position.Set(tile.transform.position.x,tile.transform.position.y,tile.transform.position.z);
+transform.position = transform.position;
 dragging = false;
 
 }
