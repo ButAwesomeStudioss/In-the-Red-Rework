@@ -123,11 +123,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1 &116575335 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4869087210256164999, guid: b867ebe7022ca464db2a44efdce04f67, type: 3}
-  m_PrefabInstance: {fileID: 3042014051299438650}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &219131747
 GameObject:
   m_ObjectHideFlags: 0
@@ -496,7 +491,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 3028950827079425950, guid: b867ebe7022ca464db2a44efdce04f67, type: 3}
   m_PrefabInstance: {fileID: 3042014051299438650}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 116575335}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f248195b64e344b7cb54d77386769918, type: 3}
@@ -1039,7 +1034,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}

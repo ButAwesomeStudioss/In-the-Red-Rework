@@ -11,8 +11,12 @@ using UnityEngine;
 
 public class Dragger : MonoBehaviour
 {
-    
- 
+    private void OnMouseOver() {
+               
+ if(Input.GetMouseButtonDown(1)){
+ transform.Rotate(0,0,90);
+} 
+    }
     
 
     

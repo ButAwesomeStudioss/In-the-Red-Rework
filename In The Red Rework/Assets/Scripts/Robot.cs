@@ -35,7 +35,7 @@ offset = GetMousePos() - (Vector2)transform.position;
 
 
 void OnMouseUp(){
-        transform.position = transform.position;          
+transform.position = transform.position;
 dragging = false;
 
 }
@@ -48,6 +48,9 @@ private void OnCollisionEnter2D(Collision2D other) {
     Rigidbody2D clone;
             clone = Instantiate(Me, Spawner.transform.position, Spawner.transform.rotation);
             Destroy(gameObject);
+           
+           
+            
             
    }
             
