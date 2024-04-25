@@ -19,8 +19,9 @@ public class Tile : MonoBehaviour
 private void OnMouseOver() {
                
  if(Input.GetMouseButtonDown(0)){
- thing.transform.position = gameObject.transform.position;
- thing.transform.rotation = gameObject.transform.rotation;
+ //thing.transform.position = gameObject.transform.position;
+ GameObject clone;
+            clone = Instantiate(thing, gameObject.transform.position, gameObject.transform.rotation);
 }
 
 }

@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Threading;
 using UnityEngine;
 
 public class Robot : MonoBehaviour
@@ -48,12 +49,14 @@ private void OnCollisionEnter2D(Collision2D other) {
     Rigidbody2D clone;
             clone = Instantiate(Me, Spawner.transform.position, Spawner.transform.rotation);
             Destroy(gameObject);
-           
-           
-            
-            
+     
    }
-            
+      
+
 
 }
+private void OnMouseOver() {
+   Me.SetRotation(90);
+}
+
 }
