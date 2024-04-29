@@ -15,6 +15,7 @@ public class Robot : MonoBehaviour
     
 public GameObject Spawner;
 
+
  
     
 
@@ -44,19 +45,21 @@ dragging = false;
 Vector2 GetMousePos(){
 return Camera.main.ScreenToWorldPoint(Input.mousePosition);
 }
+
 private void OnCollisionEnter2D(Collision2D other) {
-   if(other.rigidbody == EndSlot.attachedRigidbody){
+    if(other.rigidbody == EndSlot.attachedRigidbody){
     Rigidbody2D clone;
             clone = Instantiate(Me, Spawner.transform.position, Spawner.transform.rotation);
             Destroy(gameObject);
      
-   }
-      
-
-
 }
-private void OnMouseOver() {
-   Me.SetRotation(90);
 }
+private void OnTriggerEnter2D(Collider2D other) {
+    
 
+if(other.tag == "conveyer"){
+        Debug.Log("balls");
+        
+}
+}
 }

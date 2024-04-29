@@ -155,6 +155,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3386ac6a1e59f49bb9917b9d77911e62, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  EndSlot: {fileID: 1938207929}
+  Me: {fileID: 219131751}
+  Spawner: {fileID: 930577035}
 --- !u!212 &219131749
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -966,9 +969,10 @@ GameObject:
   - component: {fileID: 1605825606}
   - component: {fileID: 1605825607}
   - component: {fileID: 1605825605}
+  - component: {fileID: 1605825608}
   m_Layer: 0
   m_Name: Conveyer
-  m_TagString: Untagged
+  m_TagString: conveyer
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1016,7 +1020,7 @@ SpriteRenderer:
   m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: cf5a92a8ccbf24482b49982474f82fa2, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
+  m_FlipX: 1
   m_FlipY: 0
   m_DrawMode: 0
   m_Size: {x: 1, y: 1}
@@ -1052,7 +1056,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cc627c273e4eb4ee49418df3d1f6d35b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  robot: {fileID: 219131747}
 --- !u!61 &1605825606
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1083,7 +1086,7 @@ BoxCollider2D:
     serializedVersion: 2
     m_Bits: 4294967295
   m_IsTrigger: 1
-  m_UsedByEffector: 0
+  m_UsedByEffector: 1
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
@@ -1125,6 +1128,26 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!249 &1605825608
+AreaEffector2D:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1605825602}
+  m_Enabled: 1
+  m_UseColliderMask: 1
+  m_ColliderMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_UseGlobalAngle: 0
+  m_ForceAngle: 0
+  m_ForceMagnitude: 10
+  m_ForceVariation: 0
+  m_ForceTarget: 0
+  m_Drag: 0
+  m_AngularDrag: 0
 --- !u!1 &1890985576
 GameObject:
   m_ObjectHideFlags: 0
