@@ -14,6 +14,6 @@ public class DisplayMoney : MonoBehaviour
     void Update()
     {
         string[] temp = MoneyCount.text.Split('$');
-        MoneyCount.text = temp[0] + "$" + MoneyScript.money;
+        //MoneyCount.text = temp[0] + "$" + MoneyScript.money;
     }
 }

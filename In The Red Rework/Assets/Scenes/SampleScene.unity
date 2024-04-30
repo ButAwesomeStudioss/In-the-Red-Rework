@@ -136,7 +136,7 @@ GameObject:
   - component: {fileID: 219131748}
   - component: {fileID: 219131752}
   - component: {fileID: 219131751}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Robot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -196,8 +196,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 1238283895
+  m_SortingLayer: 1
   m_SortingOrder: 1
   m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -1495,7 +1495,7 @@ AreaEffector2D:
   m_UseColliderMask: 1
   m_ColliderMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 8
   m_UseGlobalAngle: 0
   m_ForceAngle: 0
   m_ForceMagnitude: 10
@@ -1734,7 +1734,6 @@ GameObject:
   - component: {fileID: 1976834625}
   - component: {fileID: 1976834627}
   - component: {fileID: 1976834626}
-  - component: {fileID: 1976834628}
   m_Layer: 5
   m_Name: Coint Count
   m_TagString: Untagged
@@ -1858,18 +1857,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1976834624}
   m_CullTransparentMesh: 1
---- !u!114 &1976834628
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1976834624}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 296624ffccd604c08bd2f1e48a5c0887, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1985971060
 GameObject:
   m_ObjectHideFlags: 0
