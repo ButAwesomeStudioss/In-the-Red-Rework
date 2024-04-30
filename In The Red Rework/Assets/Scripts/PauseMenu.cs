@@ -9,9 +9,10 @@ public class PauseMenu : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKey(KeyCode.Escape))
+        if (Input.GetKeyDown(KeyCode.Escape))
         {
-            pauseMenu.SetActive(true);
+            pauseMenu.gameObject.SetActive(true);
+            Debug.Log("Paused Game");
         }
     }
     public void Home()
@@ -20,7 +21,7 @@ public class PauseMenu : MonoBehaviour
     }
     public void Resume()
     {
-        pauseMenu.SetActive(false);
+        pauseMenu.gameObject.SetActive(false);
     }
 
 }
