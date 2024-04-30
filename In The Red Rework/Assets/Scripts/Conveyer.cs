@@ -10,26 +10,15 @@ using UnityEngine;
 
 public class Dragger : MonoBehaviour
 {
-    public GameObject robot;
+    
     private void OnMouseOver() {
-               
+            
+   
  if(Input.GetMouseButtonDown(1)){
  transform.Rotate(0,0,90);
- if(Overlapped.Equals(gameObject, robot) == true){
-robot.transform.position = gameObject.transform.position;
-
- }
-
-
-
 } 
-
-
     }
- 
-      
-
-
+    
 }
     
             
