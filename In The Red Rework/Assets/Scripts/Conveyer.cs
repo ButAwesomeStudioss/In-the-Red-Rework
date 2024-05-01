@@ -16,6 +16,7 @@ public class Dragger : MonoBehaviour
    
  if(Input.GetMouseButtonDown(1)){
  transform.Rotate(0,0,90);
+
 } 
     }
     

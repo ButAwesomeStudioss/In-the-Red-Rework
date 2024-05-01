@@ -54,11 +54,9 @@ private void OnCollisionEnter2D(Collision2D other) {
      
 }
 }
-private void OnTriggerEnter2D(Collider2D other) {
-    
-
-if(other.tag == "conveyer"){
-        Debug.Log("balls");
+private void OnTriggerExit2D(Collider2D other) {
+    if(other.tag != "conveyer"){
+        Me.velocity = Vector2.zero;
         
 }
 }
