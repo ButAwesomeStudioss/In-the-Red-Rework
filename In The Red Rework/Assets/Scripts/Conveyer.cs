@@ -14,13 +14,20 @@ public class Dragger : MonoBehaviour
     private void OnMouseOver() {
             
    
- if(Input.GetMouseButtonDown(1)){
+ if(Input.GetMouseButtonDown(0)){
  transform.Rotate(0,0,90);
 
-} 
-    }
-    
 }
+        if (Input.GetMouseButtonDown(1))
+        {
+            Destroy(gameObject);
+        }
+    }
+   
+
+
+    }
+
     
             
      
