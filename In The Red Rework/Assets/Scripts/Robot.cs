@@ -20,27 +20,28 @@ public GameObject Spawner;
     
 
     void Update() {
-if(!dragging) return;
+//if(!dragging) return;
     
- var mousePosition = GetMousePos();
+ //var mousePosition = GetMousePos();
 
- transform.position = mousePosition - offset;
+// transform.position = mousePosition - offset;
     
     
     }
    
-    void OnMouseDown () {
-dragging = true;
-offset = GetMousePos() - (Vector2)transform.position;
-}
+   // void OnMouseDown () {
+//dragging = true;
+//offset = GetMousePos() - (Vector2)transform.position;
+//}
 
 
 
-void OnMouseUp(){
-transform.position = transform.position;
-dragging = false;
 
-}
+//void OnMouseUp(){
+//transform.position = transform.position;
+//dragging = false;
+
+//}
 
 Vector2 GetMousePos(){
 return Camera.main.ScreenToWorldPoint(Input.mousePosition);
