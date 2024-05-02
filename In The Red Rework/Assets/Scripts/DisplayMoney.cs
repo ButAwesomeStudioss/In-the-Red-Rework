@@ -1,19 +1,18 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class DisplayMoney : MonoBehaviour
 {
-    private Text MoneyCount;
+    public GameObject UiObject;
+    public TextMesh MoneyCount;
 
-    void Start()
+    public object CoinCount { get; private set; }
+    void OnTriggerEnter(Collider other)
     {
-        MoneyCount = GetComponent<Text>();
-    }
-    void Update()
-    {
-        string[] temp = MoneyCount.text.Split('$');
-        //MoneyCount.text = temp[0] + "$" + MoneyScript.money;
+        if (other.tag == "CoinCount")
+        {
+            UiObject.SetActive(true);
+            gameObject. = "100";
+        }
     }
 }

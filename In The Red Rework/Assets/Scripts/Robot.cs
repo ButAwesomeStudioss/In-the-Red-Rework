@@ -15,6 +15,8 @@ public class Robot : MonoBehaviour
     
 public GameObject Spawner;
 
+    public GameObject UiObject;
+
 
  
     
