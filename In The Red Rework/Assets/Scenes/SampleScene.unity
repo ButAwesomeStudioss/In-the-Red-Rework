@@ -233,6 +233,7 @@ MonoBehaviour:
   EndSlot: {fileID: 1938207929}
   Me: {fileID: 219131751}
   Spawner: {fileID: 930577035}
+  UiObject: {fileID: 0}
 --- !u!212 &219131749
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1903,6 +1904,52 @@ AreaEffector2D:
   m_ForceTarget: 0
   m_Drag: 0
   m_AngularDrag: 0
+--- !u!1 &1724493197
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1724493199}
+  - component: {fileID: 1724493198}
+  m_Layer: 0
+  m_Name: Money Manager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1724493198
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1724493197}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7af033bab87694fcd9306eda9eb0f3ab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MoneyAmount: 250
+  moneytext: {fileID: 1976834624}
+--- !u!4 &1724493199
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1724493197}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 2019.3447, y: 948.38135, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1867077846
 GameObject:
   m_ObjectHideFlags: 0
@@ -2478,7 +2525,6 @@ GameObject:
   - component: {fileID: 1976834625}
   - component: {fileID: 1976834627}
   - component: {fileID: 1976834626}
-  - component: {fileID: 1976834628}
   m_Layer: 5
   m_Name: Coin Count
   m_TagString: Untagged
@@ -2602,19 +2648,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1976834624}
   m_CullTransparentMesh: 1
---- !u!114 &1976834628
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1976834624}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4aac9847713b7438fb31d70dda798c51, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  UiObject: {fileID: 1154406374}
 --- !u!1 &1985971060
 GameObject:
   m_ObjectHideFlags: 0
@@ -2989,3 +3022,4 @@ SceneRoots:
   - {fileID: 1890985578}
   - {fileID: 1985971062}
   - {fileID: 3042014051299438650}
+  - {fileID: 1724493199}
