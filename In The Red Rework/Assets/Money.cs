@@ -1,11 +1,10 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
-public class spawner : MonoBehaviour
-
+public class Money : MonoBehaviour
 {
-public GameObject ball;
     // Start is called before the first frame update
     void Start()
     {
@@ -15,12 +14,6 @@ public GameObject ball;
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetKeyDown("space")){
-GameObject clone;
-            clone = Instantiate(ball, gameObject.transform.position, gameObject.transform.rotation);
-        }
-
+        
     }
-
 }
-

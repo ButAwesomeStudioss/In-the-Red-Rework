@@ -10,7 +10,7 @@ using UnityEngine;
 
 public class Dragger : MonoBehaviour
 {
-    
+    public GameObject tile;
     private void OnMouseOver() {
             
    
@@ -20,6 +20,8 @@ public class Dragger : MonoBehaviour
 }
         if (Input.GetMouseButtonDown(1))
         {
+            GameObject clone;
+            clone = Instantiate(tile, gameObject.transform.position, gameObject.transform.rotation);
             Destroy(gameObject);
         }
     }

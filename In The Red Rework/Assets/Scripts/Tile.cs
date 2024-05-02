@@ -22,6 +22,7 @@ private void OnMouseOver() {
  if(Input.GetMouseButtonDown(0)){
  GameObject clone;
             clone = Instantiate(thing, gameObject.transform.position, gameObject.transform.rotation);
+Destroy(gameObject);
 }
 }
 }
