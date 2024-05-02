@@ -12,7 +12,7 @@ public class DisplayMoney : MonoBehaviour
         if (other.tag == "CoinCount")
         {
             UiObject.SetActive(true);
-            gameObject. = "100";
+            gameObject.name = "100";
         }
     }
 }
