@@ -19,8 +19,6 @@ public GameObject Spawner;
     public GameObject UiObject;
 
 
- 
-    
 
     void Update() {
 //if(!dragging) return;
