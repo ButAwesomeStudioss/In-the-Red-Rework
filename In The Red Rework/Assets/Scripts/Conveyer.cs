@@ -10,18 +10,37 @@ using UnityEngine;
 
 public class Dragger : MonoBehaviour
 {
-    public GameObject tile;
-    private void OnMouseOver() {
-            
-   
- if(Input.GetMouseButtonDown(0)){
- transform.Rotate(0,0,90);
 
-}
+    void Awake()
+    {
+        AudioSource audioSource = GetComponent<AudioSource>();
+    }
+
+    private void OnMouseOver() {
+
+
+        if (Input.GetMouseButtonDown(0))
+        {
+ transform.Rotate(0,0,90);
+            {
+                AudioSource source;
+                Collider2D SoundTrigger;
+
+                void Awake()
+                {
+                    source = GetComponent<AudioSource>();
+                    SoundTrigger = GetComponent<Collider2D>();
+                }
+
+
+                void OnTriggerEnter2D(Collider2D collider)
+                {
+                    source.Play();
+                }
+            }
+        }
         if (Input.GetMouseButtonDown(1))
         {
-            GameObject clone;
-            clone = Instantiate(tile, gameObject.transform.position, gameObject.transform.rotation);
             Destroy(gameObject);
         }
     }
@@ -30,30 +49,14 @@ public class Dragger : MonoBehaviour
 
     }
 
-    
-            
-     
-      
+internal class MyClass
+{
+    public MyClass()
+    {
+    }
 
-
-
-    
-
-    
-
-
-
-
-            
-
-
-
-            
-            
-
-
-
-        
-
-
-
+    internal void AudioSource()
+    {
+        throw new NotImplementedException();
+    }
+}
