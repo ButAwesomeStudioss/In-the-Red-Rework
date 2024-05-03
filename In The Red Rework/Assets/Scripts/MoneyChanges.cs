@@ -10,12 +10,11 @@ public class MoneyChanges : MonoBehaviour
    public int MoneyAmount = 250;
     public TMP_Text moneytext;
     
-    void awake()
-    {
-        instance = this;
-    }
+    
+     
    public void Sold()
     {
+       
         MoneyAmount += 100;
     }
     public void Bought()
@@ -32,7 +31,7 @@ public class MoneyChanges : MonoBehaviour
             MoneyAmount -= 25;
         }
     }
-    void update()
+     private void Update() 
     {
         moneytext.text = "Money: " + MoneyAmount.ToString();
     }

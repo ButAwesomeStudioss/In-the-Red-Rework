@@ -1456,7 +1456,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cc627c273e4eb4ee49418df3d1f6d35b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tile: {fileID: 440300914}
+  sold:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1724493198}
+        m_TargetAssemblyTypeName: MoneyChanges, Assembly-CSharp
+        m_MethodName: Sold
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!61 &1605825606
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2600,6 +2614,34 @@ PrefabInstance:
     - target: {fileID: 3028950827079425950, guid: b867ebe7022ca464db2a44efdce04f67, type: 3}
       propertyPath: _offsetColor.r
       value: 0.4339623
+      objectReference: {fileID: 0}
+    - target: {fileID: 3028950827079425950, guid: b867ebe7022ca464db2a44efdce04f67, type: 3}
+      propertyPath: bought.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3028950827079425950, guid: b867ebe7022ca464db2a44efdce04f67, type: 3}
+      propertyPath: bought.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3028950827079425950, guid: b867ebe7022ca464db2a44efdce04f67, type: 3}
+      propertyPath: bought.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1724493198}
+    - target: {fileID: 3028950827079425950, guid: b867ebe7022ca464db2a44efdce04f67, type: 3}
+      propertyPath: bought.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3028950827079425950, guid: b867ebe7022ca464db2a44efdce04f67, type: 3}
+      propertyPath: bought.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Bought
+      objectReference: {fileID: 0}
+    - target: {fileID: 3028950827079425950, guid: b867ebe7022ca464db2a44efdce04f67, type: 3}
+      propertyPath: bought.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: MoneyChanges, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 3028950827079425950, guid: b867ebe7022ca464db2a44efdce04f67, type: 3}
+      propertyPath: bought.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 4227833826976882168, guid: b867ebe7022ca464db2a44efdce04f67, type: 3}
       propertyPath: m_LocalPosition.x

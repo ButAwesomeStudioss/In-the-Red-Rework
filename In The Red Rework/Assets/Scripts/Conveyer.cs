@@ -4,13 +4,20 @@ using System.Collections.Generic;
 using System.Data;
 using System.Threading;
 using JetBrains.Annotations;
+using TMPro;
 using Unity.VisualScripting;
 using UnityEditor;
 using UnityEngine;
+using UnityEngine.Events;
+using UnityEngine.EventSystems;
+using UnityEngine.UI;
 
 public class Dragger : MonoBehaviour
 {
-    public GameObject tile;
+public UnityEvent sold;
+
+    
+    
     private void OnMouseOver() {
             
    
@@ -20,9 +27,10 @@ public class Dragger : MonoBehaviour
 }
         if (Input.GetMouseButtonDown(1))
         {
-            GameObject clone;
-            clone = Instantiate(tile, gameObject.transform.position, gameObject.transform.rotation);
+            
+            sold.Invoke();
             Destroy(gameObject);
+
         }
     }
    
