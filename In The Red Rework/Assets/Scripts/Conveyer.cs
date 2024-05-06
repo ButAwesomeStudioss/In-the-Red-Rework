@@ -4,19 +4,28 @@ using System.Collections.Generic;
 using System.Data;
 using System.Threading;
 using JetBrains.Annotations;
+using TMPro;
 using Unity.VisualScripting;
 using UnityEditor;
 using UnityEngine;
+using UnityEngine.Events;
+using UnityEngine.EventSystems;
+using UnityEngine.UI;
 
 public class Dragger : MonoBehaviour
 {
+public UnityEvent sold;
 
-    void Awake()
-    {
-        AudioSource AudioSource = GetComponent<AudioSource>();
-    }
+    
+    
+    private void OnMouseOver() {
+            
+   
+ if(Input.GetMouseButtonDown(0)){
+ transform.Rotate(0,0,90);
 
-    private void OnMouseOver()
+
+            private void OnMouseOver()
     {
 
 
@@ -27,7 +36,10 @@ public class Dragger : MonoBehaviour
         }
         if (Input.GetMouseButtonDown(1))
         {
+            
+            sold.Invoke();
             Destroy(gameObject);
+
         }
     }
 }
