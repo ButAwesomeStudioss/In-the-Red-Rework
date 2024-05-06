@@ -14,32 +14,34 @@ using UnityEngine.UI;
 
 public class Dragger : MonoBehaviour
 {
-public UnityEvent sold;
+    public UnityEvent sold;
 
-    
-    
+
+
     private void OnMouseOver() {
-            
-   
- if(Input.GetMouseButtonDown(0)){
- transform.Rotate(0,0,90);
 
 
-            private void OnMouseOver()
-    {
-
-
-        if (Input.GetMouseButtonDown(0))
-        {
+        if (Input.GetMouseButtonDown(0)) {
             transform.Rotate(0, 0, 90);
 
-        }
-        if (Input.GetMouseButtonDown(1))
-        {
-            
-            sold.Invoke();
-            Destroy(gameObject);
 
+            void OnMouseOver()
+            {
+
+
+                if (Input.GetMouseButtonDown(0))
+                {
+                    transform.Rotate(0, 0, 90);
+
+                }
+                if (Input.GetMouseButtonDown(1))
+                {
+
+                    sold.Invoke();
+                    Destroy(gameObject);
+
+                }
+            }
         }
     }
 }
