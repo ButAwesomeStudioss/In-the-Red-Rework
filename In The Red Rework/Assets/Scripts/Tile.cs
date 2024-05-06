@@ -13,7 +13,7 @@ public class Tile : MonoBehaviour
     public GameObject thing;
 public UnityEvent bought;
 public int moneyvalue;
-public GameObject moneymang;
+MoneyChanges moneymang;
     public void Init(bool isOffset)
     {
         _renderer.color = isOffset ? _offsetColor : _baseColor;
@@ -22,12 +22,18 @@ public GameObject moneymang;
 private void OnMouseOver() {
             
    
- if(Input.GetMouseButtonDown(0)&  >= 50){
+ if(Input.GetMouseButtonDown(0) & moneyvalue >=50){
  bought.Invoke();
  GameObject clone;
             clone = Instantiate(thing, gameObject.transform.position, gameObject.transform.rotation);
 
 }
+}
+private void Update() {
+    moneymang = GameObject.FindGameObjectWithTag("Can I talk to the manager").GetComponent<MoneyChanges>();
+
+      moneyvalue = moneymang.MoneyAmount;
+
 }
 }
   

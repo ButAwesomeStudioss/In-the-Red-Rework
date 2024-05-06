@@ -14,7 +14,7 @@ using UnityEngine.UI;
 
 public class Dragger : MonoBehaviour
 {
-public UnityEvent sold;
+public UnityEvent SoldConveyer;
 
     
     
@@ -28,7 +28,7 @@ public UnityEvent sold;
         if (Input.GetMouseButtonDown(1))
         {
             
-            sold.Invoke();
+            SoldConveyer.Invoke();
             Destroy(gameObject);
 
         }

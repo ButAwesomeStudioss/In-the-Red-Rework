@@ -24,11 +24,11 @@ public class MoneyChanges : MonoBehaviour
             MoneyAmount -= 50;
         }
     }
-    public void PlacedConveyor()
+    public void SoldConveyer()
     {
         if (MoneyAmount >= 25)
         {
-            MoneyAmount -= 25;
+            MoneyAmount += 25;
         }
     }
      private void Update() 

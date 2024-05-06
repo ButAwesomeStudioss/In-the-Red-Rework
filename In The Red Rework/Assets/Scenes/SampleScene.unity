@@ -233,7 +233,21 @@ MonoBehaviour:
   EndSlot: {fileID: 1938207929}
   Me: {fileID: 219131751}
   Spawner: {fileID: 930577035}
-  UiObject: {fileID: 0}
+  Sold:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1724493198}
+        m_TargetAssemblyTypeName: MoneyChanges, Assembly-CSharp
+        m_MethodName: Sold
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!212 &219131749
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1456,12 +1470,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cc627c273e4eb4ee49418df3d1f6d35b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sold:
+  SoldConveyer:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1724493198}
         m_TargetAssemblyTypeName: MoneyChanges, Assembly-CSharp
-        m_MethodName: Sold
+        m_MethodName: SoldConveyer
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1575,7 +1589,7 @@ GameObject:
   - component: {fileID: 1724493198}
   m_Layer: 0
   m_Name: Money Manager
-  m_TagString: Untagged
+  m_TagString: Can I talk to the manager
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1592,7 +1606,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7af033bab87694fcd9306eda9eb0f3ab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MoneyAmount: 250
+  MoneyAmount: 750
   moneytext: {fileID: 1976834626}
 --- !u!4 &1724493199
 Transform:
