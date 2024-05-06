@@ -16,13 +16,16 @@ public class Dragger : MonoBehaviour
 {
 public UnityEvent SoldConveyer;
 
-    
-    
+
+
     private void OnMouseOver() {
-            
-   
- if(Input.GetMouseButtonDown(0)){
- transform.Rotate(0,0,90);
+
+
+        if (Input.GetMouseButtonDown(0)) {
+            transform.Rotate(0, 0, 90);
+
+
+        
 
 }
         if (Input.GetMouseButtonDown(1))
@@ -31,37 +34,7 @@ public UnityEvent SoldConveyer;
             SoldConveyer.Invoke();
             Destroy(gameObject);
 
+                }
+            }
         }
-    }
-   
-
-
-    }
-
-    
-            
-     
-      
-
-
-
-    
-
-    
-
-
-
-
-            
-
-
-
-            
-            
-
-
-
-        
-
-
-
+  
