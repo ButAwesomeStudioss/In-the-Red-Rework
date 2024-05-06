@@ -2913,6 +2913,34 @@ PrefabInstance:
       propertyPath: _offsetColor.r
       value: 0.4339623
       objectReference: {fileID: 0}
+    - target: {fileID: 3028950827079425950, guid: b867ebe7022ca464db2a44efdce04f67, type: 3}
+      propertyPath: bought.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3028950827079425950, guid: b867ebe7022ca464db2a44efdce04f67, type: 3}
+      propertyPath: bought.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3028950827079425950, guid: b867ebe7022ca464db2a44efdce04f67, type: 3}
+      propertyPath: bought.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1724493198}
+    - target: {fileID: 3028950827079425950, guid: b867ebe7022ca464db2a44efdce04f67, type: 3}
+      propertyPath: bought.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3028950827079425950, guid: b867ebe7022ca464db2a44efdce04f67, type: 3}
+      propertyPath: bought.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Bought
+      objectReference: {fileID: 0}
+    - target: {fileID: 3028950827079425950, guid: b867ebe7022ca464db2a44efdce04f67, type: 3}
+      propertyPath: bought.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: MoneyChanges, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 3028950827079425950, guid: b867ebe7022ca464db2a44efdce04f67, type: 3}
+      propertyPath: bought.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 4227833826976882168, guid: b867ebe7022ca464db2a44efdce04f67, type: 3}
       propertyPath: m_LocalPosition.x
       value: -9.85
@@ -2955,6 +2983,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4869087210256164999, guid: b867ebe7022ca464db2a44efdce04f67, type: 3}
       propertyPath: m_Name
+      value: Tile
+      objectReference: {fileID: 0}
+    - target: {fileID: 4869087210256164999, guid: b867ebe7022ca464db2a44efdce04f67, type: 3}
+      propertyPath: m_TagString
       value: Tile
       objectReference: {fileID: 0}
     m_RemovedComponents: []

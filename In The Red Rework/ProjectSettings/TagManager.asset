@@ -7,6 +7,8 @@ TagManager:
   - Seller
   - conveyer
   - Can I talk to the manager
+  - Tile
+  - Placed tile
   layers:
   - Default
   - TransparentFX
